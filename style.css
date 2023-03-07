@@ -1,0 +1,277 @@
+body{margin: 0px;
+    background: #142433;
+    padding: 0px;
+}
+label {
+ background-color: white;
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ padding: 10px 15px 10px 10px;
+ cursor: pointer;
+ user-select: none;
+ border-radius: 10px;
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ color: black;
+}
+
+input {
+ display: none;
+}
+
+input:checked + label svg {
+ fill: hsl(0deg 100% 50%);
+ stroke: hsl(0deg 100% 50%);
+ animation: heartButton 1s;
+}
+
+@keyframes heartButton {
+ 0% {
+  transform: scale(1);
+ }
+
+ 25% {
+  transform: scale(1.3);
+ }
+
+ 50% {
+  transform: scale(1);
+ }
+
+ 75% {
+  transform: scale(1.3);
+ }
+
+ 100% {
+  transform: scale(1);
+ }
+}
+
+input + label .action {
+ position: relative;
+ overflow: hidden;
+ display: grid;
+}
+
+input + label .action span {
+ grid-column-start: 1;
+ grid-column-end: 1;
+ grid-row-start: 1;
+ grid-row-end: 1;
+ transition: all .5s;
+}
+
+input + label .action span.option-1 {
+ transform: translate(0px,0%);
+ opacity: 1;
+}
+
+input:checked + label .action span.option-1 {
+ transform: translate(0px,-100%);
+ opacity: 0;
+}
+
+input + label .action span.option-2 {
+ transform: translate(0px,100%);
+ opacity: 0;
+}
+
+input:checked + label .action span.option-2 {
+ transform: translate(0px,0%);
+ opacity: 1;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.learn-more {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #f8f8f8;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
+#nav-content{padding: 0px;
+display: flex;
+margin: 0px;
+height: 80px;
+background: #383939;box-shadow:1px 1px 150px black;
+}
+#nav-content li{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 15px;
+}
+#icon{box-shadow:1px 1px 150px black;
+    width: 100px;
+    text-align: center;
+    background: #4b4c4c;
+    font-size:50px;color:
+     aliceblue;
+    }#nav-content ul{
+        margin-top: 25px;
+        font-weight: bold;
+       
+        display: flex;
+    }
+    #text-header{text-shadow: 1px 1px 50px black;;
+        text-align: center;
+        
+        margin-left: 50px;
+        font-size:22px;color:
+         aliceblue;
+    }
+    #img1{
+       
+       background-image: url('https://thefilmware.com/wp-content/uploads/2022/03/spiderman-4k-newartwork-ko-3840x2160_waifu2x_photo_noise3_scale_tta_1_waifu2x_photo_noise3_scale_tta-1.webp');
+       background-size: cover;
+       background-position: center;
+    }
+    #img2{
+       
+      background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2020/03/iron-man-1.jpg');
+      background-size: cover;
+      background-position: center;
+   }
+   #img3{
+       
+    background-image: url('https://portalcinerama.com.br/wp-content/uploads/2021/07/Black_Widow_2020_4K_HD_Film_Poster_1366x768.jpg');
+    background-size: cover;
+    background-position: center;
+ }
+ #img4{
+       
+  background-image: url('https://lumiere-a.akamaihd.net/v1/images/au_featuretitle_marvel_antmanquantumania_altart_3_d_f7182d4e.jpeg?region=0,0,2048,878');
+  background-size: cover;
+  background-position: center;
+}
+    #titulo{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 35px;
+            color: rgb(240, 34, 34);
+    }
+    #sinopse{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 520px;
+        color: white;
+        font-size: 22px;
+        text-align: justify;
+    }
+    #tipo-filme{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgba(255, 255, 255, 0.436);
+    }
+    h4{
+        color: white;
+    }
+    #text-filme{     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: auto;
+        height: 700px; background-size: cover;
+        background-image: linear-gradient(to right, rgba(0,0,0,2), rgba(0,0,0,0));
+        padding: 130px 80px;
+     
+    }
+    #atores-filmes{
+      margin-top: 100px;
+    }
+    #atores{display: flex;
+      margin-top: 25px;
+      padding-left: 30px;
+    }
+    #atores img{
+      border-radius: 1rem;
+      width: 80px;
+      height: 120px;
+    }
+    #info-ator{
+      margin: 0px;
+      padding-left:20px;
+      color: white;
+    }
+    #info-atorh5:last-child{
+  
+      color: rgb(74, 73, 72);
+    }#atores-filmes{
+      display: flex;
+    }
+    #ator{
+      width: 150px;
+      color: #d2d2d2;
+    }
+
+ #infos-tipos{
+  display: flex;
+ }
