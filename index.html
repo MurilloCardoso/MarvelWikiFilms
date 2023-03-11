@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">   
+    
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-    
-            <ul id="nav-content">  
-                <div id="icon">M</div><ul>   <div id="text-header">MOVIES</div>
-                    <div id="text-header">SOBRE</div></ul>
+           <ul id="nav-content">  
+                <div id="icon">M</div>
+                <ul>   <div id="text-header">MOVIES</div>
+                    <div id="text-header">SOBRE</div>
+                    <div id="text-header"><a href="criação_personagem.html">PERSONAGEM FORM</a></div>
+                </ul>
             </ul>   
-       
     </header>
     <main>
         <section id="img1">
-            
             <article id="text-filme">
             <h1 id="titulo">HOMEM ARANHA NO WAY HOME</h1>
             <p id="tipo-filme">Aventura / Ação</p>
             <p id="sinopse">Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho. Quando um feitiço para reverter o evento não sai como o esperado, o Homem-Aranha e seu companheiro dos Vingadores precisam enfrentar inimigos de todo o multiverso.</p>
             <h4>Diretor: Jon Watts</h4>
             <h4>Roteiro: Chris McKenna, Erik Sommers</h4>
-            <button class="learn-more">
+            <a href="filme.html"><button class="learn-more">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
                 </span>
-                <span class="button-text">Ler Mais</span>
-              </button><div id="atores-filmes">
+                <span class="button-text"> Ler Mais</span>
+            </button><div id="atores-filmes"></a>
 
                 
               <div id="atores"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QDkRXhpZgAASUkqAAgAAAACAA4BAgC2AAAAJgAAABIBAwABAAAAAQAAAAAAAABMT05ET04gLSBBUFJJTCAyMzogQWN0b3IgVG9iZXkgTWFndWlyZSBhcnJpdmVzIGF0IHRoZSBVSyBwcmVtaWVyZSBvZiAiU3BpZGVyLU1hbiAzIiBhdCBPZGVvbiBMZWljZXN0ZXIgU3F1YXJlIG9uIEFwcmlsIDIzLCAyMDA3IGluIExvbmRvbiwgRW5nbGFuZC4gKFBob3RvIGJ5IERhdmUgSG9nYW4vR2V0dHkgSW1hZ2VzKf/tAPhQaG90b3Nob3AgMy4wADhCSU0EBAAAAAAA2xwCUAAKRGF2ZSBIb2dhbhwCeAC2TE9ORE9OIC0gQVBSSUwgMjM6IEFjdG9yIFRvYmV5IE1hZ3VpcmUgYXJyaXZlcyBhdCB0aGUgVUsgcHJlbWllcmUgb2YgIlNwaWRlci1NYW4gMyIgYXQgT2Rlb24gTGVpY2VzdGVyIFNxdWFyZSBvbiBBcHJpbCAyMywgMjAwNyBpbiBMb25kb24sIEVuZ2xhbmQuIChQaG90byBieSBEYXZlIEhvZ2FuL0dldHR5IEltYWdlcykcAm4ADEdldHR5IEltYWdlcwD/4QOLaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwAJPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KCQk8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIgeG1sbnM6R2V0dHlJbWFnZXNHSUZUPSJodHRwOi8veG1wLmdldHR5aW1hZ2VzLmNvbS9naWZ0LzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGx1cz0iaHR0cDovL25zLnVzZXBsdXMub3JnL2xkZi94bXAvMS4w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"><div id="info-ator"><h5>Tobey Maguere</h5><h5 id="ator">Homem Aranha mais velho trazido de outro universo, mas bem veterano e esperto</h5></div></div>
@@ -47,12 +49,13 @@
             <p id="sinopse">O Homem de Ferro foi um personagem dos quadrinhos publicados pela Marvel Comics. Sua verdadeira identidade é o empresário e bilionário Tony Stark, que usou armaduras de alta tecnologia no combate ao crime. Foi criado em 1963 pelo escritor Stan Lee, o roteirista Larry Lieber e os desenhistas Jack Kirby e Don Heck. </p>
             <h4>Diretor: Jon Favreau</h4>
             <h4>Roteiro: Larry Lieber, Stan Lee, Jack Kirby</h4>
-            <button class="learn-more">
+            <a href="filme.html"><button class="learn-more">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
                 </span>
-                <span class="button-text">Ler Mais</span>
-              </button><div id="atores-filmes">
+                <span class="button-text"> Ler Mais</span>
+            </button><div id="atores-filmes"></a>
+
               <div id="atores"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Robert_Downey%2C_Jr._2012.jpg/220px-Robert_Downey%2C_Jr._2012.jpg"><div id="info-ator"><h5>Robert John Downey</h5><h5 id="ator">Seu personagem cria um armadura poderosima que pode encomodar o governo mundial </h5></div></div>
              <div id="atores"><img src="https://cdn.britannica.com/56/172456-050-F518B29E/Gwyneth-Paltrow-2013.jpg"><div id="info-ator"><h5>Gwyneth Paltrow</h5><h5 id="ator">Assistente de TONY STARK que acaba se apaixonando por seu patrão e acaba ajudando o mesmo ao longo do filme.</h5></div></div>
                <div id="atores"><img src="https://br.web.img2.acsta.net/pictures/15/09/18/12/27/315343.jpg"><div id="info-ator"><h5>Jon Favreau</h5><h5 id="ator">Seu personagem é assistente que ajuda TONY STARK e tem papel importante para cuidar da sua carreira em das insdustrias de seu amigo e patrão.</h5></div></div>
@@ -66,12 +69,13 @@
             <p id="sinopse">Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara para se tornar sua agente suprema. Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz..</p>
             <h4>Diretor: Cate Shortland</h4>
             <h4>Roteiro: Cate Shortland, Jac Schaeffer, Ned Benson, Eric Pearson</h4>
-            <button class="learn-more">
+            <a href="filme.html"><button class="learn-more">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
                 </span>
-                <span class="button-text">Ler Mais</span>
-              </button><div id="atores-filmes">
+                <span class="button-text"> Ler Mais</span>
+            </button><div id="atores-filmes"></a>
+
               <div id="atores"><img src="https://u42.com.br/wp-content/uploads/2021/04/Viuva-Negra-Scarlet-Johansson.jpg"><div id="info-ator"><h5>Scarlett Johansson</h5><h5 id="ator"> Viúva Negra Melina Vostokoff — se passam por uma família normal em Ohio com suas filhas substitutas Natasha Romanoff e Yelena Belova. </h5></div></div>
              <div id="atores"><img src="https://images.mubicdn.net/images/cast_member/447163/cache-254412-1600343626/image-w856.jpg?size=800x"><div id="info-ator"><h5>Florence Pugh</h5><h5 id="ator"> Alexei é preso na Rússia, enquanto Natasha deserta para S.H.I.E.L.D., depois de explodir o escritório de Dreykov em Budapeste.</h5></div></div>
                <div id="atores"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/David_Harbour_by_Gage_Skidmore.jpg/800px-David_Harbour_by_Gage_Skidmore.jpg"><div id="info-ator"><h5>David Harbour</h5><h5 id="ator">Antes de se tornar Guardião Vermelho, Shostakov foi um piloto de testes de qualidade na União Soviética.</h5></div></div>
@@ -85,15 +89,15 @@
             <p id="sinopse">Scott Lang lida com as consequências de suas escolhas tanto como super-herói quanto como pai. Enquanto tenta reequilibrar sua vida com suas responsabilidades como o Homem-Formiga, ele é confrontado por Hope van Dyne e Dr. Hank Pym com uma nova missão urgente. Scott deve mais uma vez vestir o uniforme e aprender a lutar ao lado da Vespa, trabalhando em conjunto para descobrir segredos do passado.</p>
             <h4>Diretor: Peyton Reed</h4>
             <h4>Roteiro: Gabriel Ferrari ,Andrew Barrer, Chris McKenna, Erik Sommers</h4>
-            <button class="learn-more">
+            <a href="filme.html"><button class="learn-more">
                 <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
                 </span>
-                <span class="button-text">Ler Mais</span>
-              </button><div id="atores-filmes">
+                <span class="button-text"> Ler Mais</span>
+            </button><div id="atores-filmes"></a>=
               <div id="atores"><img src="https://m.media-amazon.com/images/M/MV5BMTY4NTEwNDg1MV5BMl5BanBnXkFtZTgwODMwMDA0ODE@._V1_FMjpg_UX1000_.jpg"><div id="info-ator"><h5>Paul Rudd</h5><h5 id="ator">Um ex presidiario que acaba ganhando uma roupa projetada para ficar menor e maior.</h5></div></div>
-             <div id="atores"><img src="https://akns-images.eonline.com/eol_images/Entire_Site/201872/rs_634x828-180802045516-634.lost-evangeline-lilly-kate-austen.8218.jpg?fit=around%7C634:829&output-quality=90&crop=634:829;center,top"><div id="info-ator"><h5>Evangeline Lilly</h5><h5 id="ator">Hope filha de Henry Pym volta para descobrir a verdade sobre seu pai que escondeu dela.</h5></div></div>
-               <div id="atores"><img src="https://revistashalom.files.wordpress.com/2013/07/o-ator-michael-douglas-recebeu-com-alegria-a-indicac3a7c3a3o-ao-emmy-awards-desse-ano.jpg"><div id="info-ator"><h5>Michael Douglas</h5><h5 id="ator">Seu personagem Henry Pym desenvolve um soro que é usado junto com uma roupa que deixa seu usuario 10 vezes menor.</h5></div></div>
+              <div id="atores"><img src="https://akns-images.eonline.com/eol_images/Entire_Site/201872/rs_634x828-180802045516-634.lost-evangeline-lilly-kate-austen.8218.jpg?fit=around%7C634:829&output-quality=90&crop=634:829;center,top"><div id="info-ator"><h5>Evangeline Lilly</h5><h5 id="ator">Hope filha de Henry Pym volta para descobrir a verdade sobre seu pai que escondeu dela.</h5></div></div>
+              <div id="atores"><img src="https://revistashalom.files.wordpress.com/2013/07/o-ator-michael-douglas-recebeu-com-alegria-a-indicac3a7c3a3o-ao-emmy-awards-desse-ano.jpg"><div id="info-ator"><h5>Michael Douglas</h5><h5 id="ator">Seu personagem Henry Pym desenvolve um soro que é usado junto com uma roupa que deixa seu usuario 10 vezes menor.</h5></div></div>
             </div>
             </article>
         </section>
